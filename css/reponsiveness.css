@@ -1,0 +1,259 @@
+@media only screen and (max-width:771px) {
+
+    .home .homeright {
+        position: absolute;
+        left: 45%;
+        top: 50vh;
+    }
+
+    .abt-right h2 {
+        margin: 30px 0px;
+        font-size: 4rem;
+        color: white;
+    }
+
+    .abt-right p {
+
+        font-size: 1.5rem;
+        text-align: justify;
+        margin-right: 26px;
+    }
+
+    .abt-right button {
+        padding: 10px 38px;
+    }
+
+    .interest h1 {
+        padding: 12px;
+        font-size: 5rem;
+        color: var(--white);
+        margin-bottom: 0;
+    }
+
+    .content {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        /* background-color: red; */
+
+    }
+
+    .content img {
+        width: 100%;
+        height: 90%;
+    }
+
+    .items {
+        justify-content: space-between;
+        height: 40vh;
+        width: 70%;
+        font-size: 14px;
+        margin-bottom: 8px;
+    }
+}
+
+@media only screen and (max-width:633px) {
+    * {
+        /* color: red; */
+    }
+
+    .abt-right h2 {
+        margin: 20px 0px;
+        font-size: 2rem;
+        color: white;
+    }
+
+    .abt-right p {
+
+        font-size: 1.3rem;
+        text-align: justify;
+        margin-right: 26px;
+    }
+
+    /* navigation bar */
+    .rightnav {
+        display: none;
+    }
+
+    .interest h1 {
+        font-size: 3rem;
+    }
+
+    .projects h1 {
+        padding: 8px;
+        font-size: 26px;
+        margin-bottom: 0px;
+        padding-top: 8px;
+
+    }
+
+    .project-box {
+        width: 100%;
+        /* background-color: red; */
+        display: grid;
+        grid-template-columns: repeat(1, auto);
+        align-items: center;
+        justify-content: center;
+
+    }
+
+    .project-box img {
+        width: 40%;
+    }
+
+    /* ******************** */
+    /* contact  */
+    .contact h1 {
+        padding: 20px;
+        font-size: 3rem;
+    }
+
+
+    .contact-form {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+    }
+
+
+    .map {
+        width: 90%;
+        height: 40vh;
+    }
+
+    .form {
+        width: 90%;
+        height: 50vh;
+    }
+
+
+
+
+
+}
+
+@media only screen and (max-width:593px) {
+    * {
+        /* color: yellow; */
+    }
+
+    /* nav bar */
+    nav .menu {
+        display: block;
+    }
+
+    .menu ion-icon {
+        font-size: 30px;
+        font-weight: bolder;
+        display: block;
+    }
+
+    nav {
+        display: flex;
+    }
+
+    nav .rightnav ul {
+        display: flex;
+        flex-direction: column;
+    }
+
+
+
+
+    /* about  */
+    .about {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        height: 100vh;
+        background-color: var(--blue);
+        /* position: absolute; */
+    }
+
+    .abt-left {
+        width: 100%;
+        position: relative;
+        top: 20px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 20px;
+
+    }
+
+    .abt-right {
+        width: 100%;
+        padding-left: 20px;
+        box-sizing: border-box;
+
+
+    }
+
+    .abt-right h2 {
+        margin: 20px 0px;
+        font-size: 2rem;
+    }
+
+    .abt-right p {
+
+        font-size: 1rem;
+        text-align: justify;
+        margin-right: 26px;
+    }
+
+
+    .project-box {
+        width: 100%;
+        /* background-color: red; */
+        display: grid;
+        grid-template-columns: repeat(1, auto);
+        align-items: center;
+        justify-content: center;
+
+    }
+
+    .project-box img {
+        width: 45%;
+    }
+}
+
+@media only screen and (max-width:448px) {
+    * {
+        /* color: red; */
+    }
+
+    .about {
+        display: flex;
+        width: 100%;
+        height: 100vh;
+        background-color: var(--blue);
+        /* position: absolute; */
+    }
+
+    .abt-left {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+    }
+
+    .abt-right {
+        background-color: var(--blue);
+
+    }
+
+    .abt-left img {
+
+        height: 120px;
+        width: 120px;
+
+    }
+
+    /* projects */
+    .project-box img {
+        width: 75%;
+    }
+
+}

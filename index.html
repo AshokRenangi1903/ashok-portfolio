@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Asap:ital@1&display=swap" rel="stylesheet">
+    <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="css/utils.css">
+    <link rel="stylesheet" href="css/reponsiveness.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+</head>
+
+<body>
+    <!-- Navigation Bar -->
+    <nav>
+        <div class="leftnav">
+            <span>Ashok Reanagi</span>
+        </div>
+        <div class="menu" id="menu"><ion-icon name="menu-outline"></ion-icon></div>
+        <div class="rightnav" id="rightnav">
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#interests">Interests</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Home  -->
+
+    <div class="home" id="home">
+        <img src="resources/bgimage.jpg" alt="laptop image" width="100%">
+
+        <div class="homeright">
+            <span>Hii There</span><br>
+            <span>I am <span class="multi-text"></span></span>
+        </div>
+
+
+        <!-- Setup and start animation! -->
+        <script>
+            var typed = new Typed('.multi-text', {
+                strings: ['Web Developer', 'Flutter Developer', ''],
+                typeSpeed: 50,
+                backSpeed: 30,
+                loop: true
+            });
+        </script>
+
+    </div>
+
+
+    <!-- About -->
+    <div class="about" id="about">
+        <div class="abt-left">
+            <!-- <div class="box"></div> -->
+            <div class="image">
+                <img src="resources/mypic.png" alt="my image">
+            </div>
+        </div>
+        <div class="abt-right">
+            <h2>About Myself</h2>
+            <p>I am Ashok Renangi currently I'm pursuing my 4th year B.Tech in JNTUA College of Pulivendula , which is
+                located in
+                Pulivendula.I have good skills in web development and app development using flutter . I have built an
+                real time application using flutter named RAKTH DHAAN.Currently it is available in playstore also...<br>
+                Coming to my Academics I have completed my Intermediate with 95.7% and 10th with 10/10 GPA.<br>
+                My hobbies are listening music , learning new things,watching movies and reading books...</p>
+            <a href="https://drive.google.com/file/d/19U2mX1DtJZE_TfeuZIFKVs7QtyQa6KHp/view?usp=drivesdk"
+                target="_blank"><button class="btn blue">RESUME</button></a>
+        </div>
+    </div>
+
+    <!-- Interests -->
+
+    <div class="interest" id="interests">
+        <h1>I'm interested in.....</h1>
+        <div class="content">
+            <div class="items" id="box1">
+                <img src="resources/flutter.jpg" alt="flutter Developement">
+                <span>Flutter Developement</span>
+            </div>
+            <div class="items" id="box2">
+                <img src="resources/frontend.jpg" alt="frontend Developemnet">
+                <span>FrontEnd Developement</span>
+            </div>
+        </div>
+    </div>
+
+
+
+    <!-- Projects -->
+    <div class="projects" id="projects">
+        <h1>Projects</h1>
+        <section class="project-box">
+            <div class="project-image"><a href="https://oyebusy-view.netlify.app/" target="_blank"><img
+                        src="resources/oyebusy.png" alt=""></a></div>
+            <div class="project-image"><a href="https://gpacalculator1903.netlify.app/" target="_blank"><img
+                        src="resources/gpa calculator.png" alt=""></a></div>
+            <div class="project-image"><a href="https://hyderabad-weather.netlify.app/" target="_blank"><img
+                        src="resources/weather.png" alt=""></a></div>
+            <div class="project-image"><a href="https://reaction-testing-game.netlify.app/" target="_blank"><img
+                        src="resources/reaction tester game.png" alt=""></a></div>
+        </section>
+    </div>
+
+    <!-- Contact -->
+    <div class="contact" id="contact">
+        <h1>Connect With Me </h1>
+        <div class="contact-form">
+            <div class="map">
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3863.6166679257462!2d78.23181867366003!3d14.449241480767343!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bb3eb8f7c5d4623%3A0xedbb309928332524!2sJNTUA%20College%20of%20Engineering%2C%20Pulivendula!5e0!3m2!1sen!2sin!4v1689621060849!5m2!1sen!2sin"
+                    style="border:0;" allowfullscreen="" loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+            </div>
+            <div class="form">
+                <input type="text" placeholder="Enter your name">
+                <input type="email" placeholder="Enter your Email">
+                <input type="text" placeholder="Any Queries....">
+                <textarea rows="10" name="text" placeholder="Give me your feedback..."></textarea>
+                <button class="submit btn blue">Submit</button>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        var val = 0;
+
+        document.getElementById('menu').onclick = function () {
+            if (val == 0) {
+                document.getElementById('rightnav').style.display = "block";
+                val = 1;
+            }
+            else {
+                document.getElementById('rightnav').style.display = "none";
+                val = 0;
+            }
+        }
+    </script>
+
+
+</body>
+
+
+</html>
